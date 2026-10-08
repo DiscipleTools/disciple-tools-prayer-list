@@ -94,5 +94,4 @@ class DT_Prayer_List_Chart_Template extends DT_Metrics_Chart_Base
             return new WP_Error( __METHOD__, 'Missing parameters.' );
         }
     }
-
 }

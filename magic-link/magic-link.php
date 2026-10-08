@@ -49,7 +49,6 @@ class DT_Prayer_List_Magic_Link extends DT_Magic_Url_Base
         add_action( 'dt_blank_body', [ $this, 'body' ] );
         add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
         add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
-
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
@@ -235,7 +234,7 @@ class DT_Prayer_List_Magic_Link extends DT_Magic_Url_Base
 
         // STATUS
         $types = [ 'active' ];
-        $keys = [ 'overall_status','group_status', 'status' ];
+        $keys = [ 'overall_status', 'group_status', 'status' ];
         $status_types = dt_array_to_sql( $types );
         $status_key = dt_array_to_sql( $keys );
 
@@ -280,7 +279,7 @@ class DT_Prayer_List_Magic_Link extends DT_Magic_Url_Base
         return $data;
     }
 
-    public function underscore( $str, array $no_strip = []) {
+    public function underscore( $str, array $no_strip = [] ) {
         // non-alpha and non-numeric characters become spaces
         $str = preg_replace( '/[^a-z0-9' . implode( "", $no_strip ) . ']+/i', ' ', $str );
         $str = trim( $str );

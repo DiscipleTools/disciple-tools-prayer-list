@@ -121,6 +121,5 @@ class DT_Prayer_List_Tile
 
         return $results;
     }
-
 }
 DT_Prayer_List_Tile::instance();

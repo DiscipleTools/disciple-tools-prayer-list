@@ -19,7 +19,6 @@ class DT_Prayer_List_Charts
         /**
          * @todo add other charts like the pattern above here
          */
-
     } // End __construct
 }
 DT_Prayer_List_Charts::instance();
